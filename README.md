@@ -18,7 +18,14 @@ document ingest -> chunk and index -> retrieve and answer -> prompt management -
 
 ```powershell
 Copy-Item .env.example .env
+Copy-Item frontend/.env.local.example frontend/.env.local
 docker compose up --build
+```
+
+For host-side backend development:
+
+```powershell
+python -m pip install -r requirements-dev.txt
 ```
 
 Services:

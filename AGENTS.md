@@ -16,7 +16,7 @@ Build a maintainable learning platform for enterprise AI application engineering
 ## Commands
 
 - Install frontend: `npm.cmd install --prefix frontend`
-- Backend dev install: `python -m pip install -e backend[dev]`
+- Backend dev install: `python -m pip install -r requirements-dev.txt`
 - Dev stack: `docker compose up --build`
 - Backend test: `python -m pytest backend/tests`
 - Backend lint: `python -m ruff check backend`
@@ -38,6 +38,7 @@ Build a maintainable learning platform for enterprise AI application engineering
 - Check `git status --short --branch` before editing.
 - Do not overwrite existing uncommitted work.
 - Do not commit secrets, logs, local uploads, virtualenvs, build output, or node modules.
+- Commit only `.env.example` or `.env.*.example` templates; never commit real `.env` files.
 - Do not modify old database migrations after they are merged.
 - Add tests for new behavior.
 - Keep changes scoped to the task and avoid broad refactors.
