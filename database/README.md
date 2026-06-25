@@ -15,6 +15,7 @@ MVP planned tables:
 - rag_retrieval_logs
 - model_call_logs
 - system_logs
+- model_providers
 
 Migration rules:
 

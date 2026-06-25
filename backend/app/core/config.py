@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     app_env: str = "local"
     app_name: str = "Enterprise AI Copilot Lab"
     frontend_url: str = "http://localhost:3000"
+    default_workspace_id: str = "default"
 
     postgres_host: str = "localhost"
     postgres_port: int = 5432
@@ -23,6 +24,11 @@ class Settings(BaseSettings):
     jwt_secret_key: str = Field(default="change-me-in-local-env")
     jwt_algorithm: str = "HS256"
     access_token_expire_minutes: int = 60
+
+    admin_username: str = "admin"
+    admin_email: str = "admin@example.com"
+    admin_password: str = "admin123456"
+    admin_display_name: str = "Administrator"
 
     llm_provider: str = "mock"
     embedding_provider: str = "mock"
